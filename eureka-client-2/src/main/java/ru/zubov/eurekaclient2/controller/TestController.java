@@ -1,15 +1,15 @@
-package ru.zubov.demo.eurekaclient.controller;
+package ru.zubov.eurekaclient2.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/main")
+@RequestMapping("/new")
 public class TestController {
 
-    @GetMapping("/test")
+    @GetMapping("/name")
     public String test(){
-        return "test";
+        return "test_2";
     }
 }
