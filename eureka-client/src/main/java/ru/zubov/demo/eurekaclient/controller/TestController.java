@@ -11,8 +11,11 @@ public class TestController {
     @Value("${eureka.instance.instance-id}")
     private String id;
 
+    @Value("${testParam}")
+    private String testParam;
+
     @GetMapping("/test")
     public String test() {
-        return id;
+        return id + ":" + testParam;
     }
 }
