@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/name")
-    public String test(){
+    public String showTest(){
         return "test_2";
     }
 }

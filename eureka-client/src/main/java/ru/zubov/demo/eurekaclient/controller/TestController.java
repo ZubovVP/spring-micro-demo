@@ -15,7 +15,7 @@ public class TestController {
     private String testParam;
 
     @GetMapping("/test")
-    public String test() {
+    public String showIdAndTestParam() {
         return id + ":" + testParam;
     }
 }
